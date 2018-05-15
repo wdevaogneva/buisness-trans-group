@@ -1,0 +1,245 @@
+.button
+	width: 184px
+	height: 49px
+	padding-bottom: 2px
+	@include roboto-b
+	font-size: 15px
+	line-height: 24px
+	letter-spacing: 0.3px
+	color: $text-color-light
+	background-color: $text-color-light
+	background-image: linear-gradient(-18deg, #084b72 0%, #2e76a0 50%, #084b72 100%)
+	transition: All 0.2s
+	border: none
+		radius: 24px
+	&:hover
+		background-image: linear-gradient(-18deg, #084b72 0%, #2e76a0 25%, #084b72 50%, #2e76a0 75%, #084b72 100%)
+		cursor: pointer
+	&-o
+		background:
+			color: transparent
+			image: none
+		border: 2px solid $text-color-light
+		&:hover
+			color: $active-color
+			background:
+				color: $text-color-light
+				image: none 
+		&-header
+			margin-left: -11px
+			&__img
+				display: none
+		&-services
+			display: block
+			width: 153px
+			margin-top: 16px
+			padding-top: 9px
+			text-align: center
+			&:hover
+				color: $active-color
+			
+	&-main
+		transition: All 0.2s
+	&-find
+		width: 28px
+		height: 28px
+		margin-left: -5px
+		background:
+			color: #0b5e8f
+			image: linear-gradient(to top, rgba(11, 94, 143, 0.41) 0%, rgba(109, 161, 192, 0.41) 50%, rgba(11, 94, 143, 0.41) 100%)
+		border: none
+			radius: 50%
+		&:hover
+			background-image: linear-gradient(to top, rgba(11, 94, 143, 0.41) 0%, rgba(109, 161, 192, 0.41) 25%, rgba(11, 94, 143, 0.41) 100%)
+			box-shadow:  2px 2px 2px rgba(0,0,0,0.5);
+
+		&__img
+			margin-top: -4px
+	&-submit
+		margin: 10px auto 0 auto
+		&-footer
+			text-align: center
+			width: 100%
+
+		
+.slider
+	&-arrow
+		position: absolute
+		top: 20%
+		width: 24px
+		height: 47px
+		z-index: 1
+		&_exp
+			top: 50%
+		&:hover
+			cursor: pointer
+		&__left
+			margin-left: 20px
+			background: transparent url(../img/arrow-left.png) center no-repeat
+		&__right
+			right: 0
+			margin-right: 20px
+			background: transparent url(../img/arrow-right.png) center no-repeat
+	&-dots
+		margin-top: 175px
+		display: flex
+		flex-wrap: wrap
+		justify-content: center
+		list-style-type: none
+		li
+			display: block
+			margin-right: 4px
+			button
+				position: relative
+				z-index: 1
+				padding: 1px 1px
+				width: 14px
+				height: 14px
+				color: transparent
+				background-color: transparent
+				border: 2px solid #ffffff
+					radius: 50%
+		li.slick-active button::after
+			position: absolute
+			content: ''
+			top: -2.3px
+			left: -2px
+			width: 15px
+			height: 15px
+			z-index: 2
+			background-color: #246f9b
+			border: 2px solid #246f9b
+				radius: 50%
+
+.section-title
+	position: relative
+	@include roboto-b
+	font-size: 23px
+	line-height: 24px
+	text-transform: uppercase
+	letter-spacing: 0.6px
+	text-align: center
+	color: #242830
+	&::before
+		content: ''
+		position: absolute
+		top: 12px
+		left: 725px
+		width: 106px
+		height: 2px			
+		background: transparent url(../img/line-gray.png) center no-repeat
+	&::after
+		content: ''
+		position: absolute
+		top: 12px
+		left: 369px
+		width: 106px
+		height: 2px			
+		background: transparent url(../img/line-gray.png) center no-repeat
+	&_footer
+		margin-left: -3px
+	&_about
+		text-align: left
+	&_news
+		&::before
+			left: 684px
+		&::after
+			left: 406px
+
+
+.main-form
+	position: relative
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	margin: 39px auto 0 auto
+	&-fast
+		margin-top: 30px
+		.main-form
+			&__input
+				margin-bottom: 33px
+				&s
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					margin-left: 5px
+		.button-submit
+			margin-top: 0
+	&-call
+		margin-top: 35px
+		.main-form
+			&__input
+				margin-bottom: 33px
+				&s
+					width: 100%
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					margin-left: 7px
+			&__small
+				margin-top: 16px
+		.button-submit
+			margin-top: -1px
+
+
+	&__small
+		margin-top: 20px
+		width: 100%
+		@include roboto
+		font-size: 15px
+		line-height: 24px
+		letter-spacing: 0.25px
+		text-align: center
+		color: #303030
+	&__input
+		width: 337px
+		margin-bottom: 32px
+		margin-right: 3px
+		padding-bottom: 10px
+		background-color: transparent
+		border: none
+			bottom: 1px solid #303030
+		&::-webkit-input-placeholder
+			@include roboto-b
+			font-size: 15px
+			letter-spacing: 0.3px			
+			color: #303030
+		&::-moz-placeholder
+			@include roboto-b
+			font-size: 15px
+			letter-spacing: 0.3px			
+			color: #303030
+		&:-moz-placeholder
+			@include roboto-b
+			font-size: 15px
+			letter-spacing: 0.3px			
+			color: #303030
+		&:-ms-input-placeholder
+			@include roboto-b
+			font-size: 15px
+			letter-spacing: 0.3px			
+			color: #303030
+		&_direct
+			padding-left: 30px
+	span
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			top: 2px
+			left: 0
+			z-index: 2
+			width: 17px
+			height: 24px
+			background: transparent url(../img/point-ico.png) center no-repeat
+	  
+
+
+
+
+
+
+  	  
+
+
+

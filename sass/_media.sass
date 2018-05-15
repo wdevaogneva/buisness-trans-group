@@ -1,0 +1,914 @@
+@media (max-width: 1320px)
+	.container
+		max-width: 1100px
+		padding:
+			left: 15px
+			right: 15px
+
+
+	.section-title
+		&_news
+			&::before
+				left: 618px
+			&::after
+				left: 340px
+		&_partners
+			&::before
+				left: 671px
+			&::after
+				left: 290px
+
+	.header
+		&-logo
+			margin-top: 31px
+			img
+				width: 35%
+			&::before
+				top: 38px
+				left: 235px
+			&::after
+				top: 38px
+				left: -25px
+
+	.partners
+		&__block
+			width: 19%
+
+	
+
+
+
+//========================================================
+
+
+
+@media (max-width: 1199px)
+	.container
+		max-width: 960px
+
+	.section-title
+		&::before
+			left: 602px
+		&::after
+			left: 246px
+		&_news
+			&::before
+				left: 550px
+			&::after
+				left: 272px
+		&_partners
+			&::before
+				left: 602px
+			&::after
+				left: 220px
+		
+
+	.header
+		&-button
+			text-align: right
+		&-phone
+			margin-right: -45px
+		&-logo
+			margin-top: 31px
+			img
+				width: 120%
+				margin-left: -15px
+			&::before
+				display: none
+			&::after
+				display: none
+	.main
+		&__title, &__text
+			margin-left: 20px
+		&_fixed
+			margin-left: 35px
+
+	.services
+		margin-top: 681px
+		&-container
+			max-width: 960px
+		&-block
+			height: 178px
+			&s
+				max-width: 921px
+			&__img
+				top: 63px
+				left: 27px
+			&__btn
+				margin-left: -17px
+
+	.about
+		&__img
+			height: 480px
+			background-size: auto 100%
+		&__text
+			&__block
+				margin-left: 45px
+				max-width: 400px
+				
+	.exp-imp
+		background-position: 30% 0
+		&__title, &__text
+				margin-right: 20px
+		&_fixed
+			margin-right: 35px
+
+
+
+
+	.footer
+		&-menu
+			&__irslogo
+				justify-content: center
+				margin-top: 0
+			&__text
+				margin-right: 0
+
+
+
+
+//========================================================
+
+
+
+@media (max-width: 991px)
+
+	.section-title
+		&::before
+			left: 486px
+		&::after
+			left: 143px
+		&_news
+			&::before
+				left: 430px
+			&::after
+				left: 152px
+		&_partners
+			&::before
+				left: 478px
+			&::after
+				left: 105px
+
+	.container
+		max-width: 720px
+
+	.button
+		width: 160px
+		height: 45px
+		font-size: 14px
+		&:hover
+			background-image: linear-gradient(-18deg, #084b72 0%, #2e76a0 50%, #084b72 100%)
+		&-o
+			&:hover
+				color: $text-color-light
+				background:
+					color: transparent
+					image: none
+			&-services
+				color: $active-color
+				border-color: $active-color
+				&:hover
+					color: $active-color
+
+		&-find
+			&:hover
+				background-image: linear-gradient(to top, rgba(11, 94, 143, 0.41) 0%, rgba(109, 161, 192, 0.41) 50%, rgba(11, 94, 143, 0.41) 100%)
+				box-shadow: none
+
+
+	.menu
+		&__li
+			margin-left: 30px
+		&__link
+			font-size: 15px
+		&-footer
+			margin-top: 20px
+
+
+
+	.header
+		padding-top: 0px
+		&-text
+			font-size: 13px
+			letter-spacing: 0.1px
+		&-phone
+			margin:
+				right: -25px
+				left: -15px
+			@include roboto
+			font-size: 14px
+		&-button
+			margin-right: -15px
+		&-logo
+			margin:
+				left: 70px
+				top: 15px
+				bottom: 20px
+	.main
+		height: 625px
+		&-slider
+			margin-top: 200px
+		&__title
+			margin-bottom: 14px
+			font-size: 48px
+			line-height: 52px
+		&__text
+			font-size: 14px
+			line-height: 26px
+		&_fixed
+			margin-top: -145px
+		&-form
+			width: 640px
+			&__input
+				width: 300px
+
+
+	.slider
+		&-dots
+			margin-top: 100px
+
+
+	.services
+		margin-top: 445px
+		height: 620px
+		&-container
+			top: 500px
+			max-width: 740px
+		&-block
+			height: 178px
+			width: 49.7%
+			&s
+				max-width: 700px
+			&__img
+				left: 57px
+			&__btn
+				display: block
+				margin-left: -25px
+			&:hover
+				background-color: $text-color-light
+				.services-block
+					&__text
+						color: $active-color
+					&__img-o
+						display: none
+
+	.about
+		&__img
+			height: 400px
+		&__text
+			&__block
+				margin-left: 45px
+				max-width: 300px
+		&__descr, &__subtitle
+			font-size: 14px
+			line-height: 20px
+		&__descr
+			margin-top: 22px
+
+	.news
+		&-block
+			padding-bottom: 20px
+			&__img::before
+				display: none
+			&:hover
+				box-shadow: none
+			&__text
+				margin-top: 20px
+				width: 90%
+				font-size: 14px
+				line-height: 20px
+			&__date
+				margin:
+					top: 15px
+					left: 15px
+				font-size: 13px
+				line-height: 20px
+
+	.exp-imp
+		&__title
+			margin-bottom: 14px
+			font-size: 48px
+			line-height: 52px
+		&__text
+			font-size: 14px
+			line-height: 26px
+
+	.partners
+		&__wrap
+			justify-content: center
+		&__block
+			width: 31%
+			margin:
+				right: 8px
+				bottom: 8px
+			border: 1px solid rgba(0, 0, 0, 0.09)
+			&:hover
+				box-shadow: none
+			&_first
+				margin-left: 8px
+		&__img-o
+			display: none
+
+
+
+
+
+
+
+
+
+	.footer
+		&-logo
+			img
+				margin-left: -40px
+				width: 97px
+		&-menu
+			padding-left: 40px
+			&__text
+				font-size: 11px
+			&__irslogo
+				margin:
+					left: -20px
+					top: -15px
+
+	.popup
+		width: 710px
+		&-container
+			width: 710px
+
+
+
+
+
+
+
+//========================================================
+
+
+
+@media (max-width: 767px)
+
+	.container
+		max-width: 540px
+
+	.section-title
+		padding:
+			top: 30px
+			bottom: 20px
+		font-size: 20px
+		&_footer
+			margin-left: 0
+		&::before
+			top: 42px
+			left: 362px
+		&::after
+			top: 42px
+			left: 69px
+		&_about
+			text-align: center
+		&_news
+			&::before
+				left: 324px
+			&::after
+				left: 80px
+		&_partners
+			&::before
+				left: 366px
+			&::after
+				left: 38px
+
+	.button
+		&-submit
+			margin: 0 auto
+			
+
+		&-o-services
+			display: block
+			width: 120px
+			margin: 14px 14px 0 auto
+			padding-top: 9px
+			text-align: center
+
+	.menu
+		&__li
+			margin-left: 15px
+		&__link
+			@include roboto
+			font-size: 13px
+			line-height: 24px
+		&-find
+			text-align: center
+		&-footer
+			.menu__link
+				@include roboto-b
+				&_active::after
+				 top: 18px
+				&:hover
+					&::after
+						top: 18px
+
+
+
+	.header
+		&-text
+			display: none
+		&-logo
+			margin-left: 0
+			max-width: 90px
+
+	.main
+		height: 550px
+		&-slider
+			margin-top: 200px
+		&__title
+			margin-bottom: 5px
+			font-size: 38px
+			line-height: 44px
+		&__text
+			font-size: 13px
+			line-height: 20px
+		&_fixed
+			margin-top: -130px
+		&-form
+			justify-content: center
+			width: 100%
+			&__small
+				margin-top: 10px
+				font-size: 13px
+				line-height: 18px
+			&__input
+				width: 300px
+				margin-bottom: 18px
+				padding-bottom: 5px
+				&::-webkit-input-placeholder
+					font-size: 13px
+				&::-moz-placeholder
+					font-size: 13px
+				&:-moz-placeholder
+					font-size: 13px
+				&:-ms-input-placeholder
+					font-size: 13px
+				&_direct
+					padding-left: 25px
+				
+
+
+
+	.slider
+		&-arrow
+			height: 24px
+
+
+
+	.services
+		margin-top: 388px
+		height: 480px
+		&-container
+			padding-top: 0
+			top: 480px
+			max-width: 540px
+		&-block
+			height: 140px
+			&s
+				margin-top: 0
+				max-width: 510px
+			&__text
+				width: 115px
+				margin: 0 auto
+				font-size: 14px
+				line-height: 20px
+			&__btn
+				margin-left: 0px
+			&__img
+				top: 41.5px
+				left: 20px
+
+
+	.about
+		&__img
+			height: 380px
+			width: 100%
+			background-position: 50% 0%
+		&__text
+			order: -1
+			width: 100%
+			margin-bottom: 40px
+			&__block
+				margin:
+					left: 30px
+					right: 30px
+				max-width: 100%
+		&__subtitle
+			margin-top: -20px
+			text-align: center
+		&__nullblock
+			width: 100%
+			height: 30px
+
+	.news
+		padding:
+			top: 0
+			bottom: 25px
+		&-block
+			width: 48.5%
+			margin-bottom: 15px
+			&s
+				margin-top: 20px
+			&__img::before
+				display: none
+
+	.exp-imp
+		height: 500px
+		background-position: 30% 40%
+		padding-top: 150px
+		&__title
+			margin-bottom: 5px
+			font-size: 34px
+			line-height: 44px
+		&__text
+			font-size: 13px
+			line-height: 20px
+
+	.partners
+		padding:
+			top: 0
+			bottom: 40px
+		
+
+
+
+
+	.footer
+		&-menu
+			transform: none
+			padding:
+				top: 20px
+				bottom: 20px
+				left: 20px
+		&-logo
+			img
+				margin-left: 0
+		&-request
+			padding-top: 0
+		&-form
+			width: 400px
+		.main-form
+			margin-top: 0
+
+
+	.popup
+		padding-top: 0px
+		width: 400px
+		&-container
+			width: 400px
+		.main-form
+			margin-top: 0px
+			&__input, span
+				margin:
+					left: auto
+					right: auto
+			&__input
+				margin-bottom: 12px
+		&-thx
+			padding-top: 20px
+
+		.button-submit
+			margin-top: 10px
+		&-call
+			.button-submit
+				margin-top: 20px
+
+
+//========================================================
+
+
+
+@media (max-width: 575px)
+		
+	.container
+		max-width: 94%
+
+	.button
+		&-o
+			&-header
+				width: 30px
+				height: 30px
+				&__text
+					display: none
+				&__img
+					display: block
+					width: 14px
+				&:hover
+					background:
+						color: transparent
+						image: none
+					border: 2px solid $text-color-light
+		&-find
+			width: 100%
+			height: 100%
+			&__img
+				width: 40%
+
+
+
+	.section-title
+		&::before, &::after
+			display: none
+			
+
+	.menu
+		&-mobil
+			position: fixed
+			top: 12px
+			left: 5%
+			z-index: 3
+			display: block
+		&-footer
+			display: none
+
+		&-header
+			display: none
+			&_mobil
+				position: fixed
+				top: 0
+				left: 0
+				display: block
+				width: 100%
+				height: 100%
+				background-color: rgba($active-color, 0.9)
+				.menu
+					&__ul
+						height: 80%
+						margin:
+							top: 20%
+							bottom: 20px
+					&__li
+						width: 100%
+						text-align: center
+					&__link
+						font-size: 28px
+						&:hover
+							&::after
+								margin-left: 3px
+								width: 100%
+								top: 40px
+								height: 3px
+						&_active
+							&::after
+								margin-left: 3px
+								width: 100%
+								top: 40px
+								height: 3px
+					&-find
+						height: 50px
+						width: 50px
+						margin: 0 auto
+				
+	.header
+		&-phone
+			margin-top: 15px
+		&-button
+			margin-top: 18px
+	
+		&-logo
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+			max-width: 100%
+			width: 270px
+			margin: 0 auto
+			height: 70px
+			position: relative
+			img
+				margin-left: 3px
+				width: 100%
+				max-width: 116px
+			&::before
+				position: absolute
+				top: 33px
+				left: -20px
+				display: block
+				background-size: 70%
+			&::after
+				position: absolute
+				top: 33px
+				left: 187px
+				display: block
+				background-size: 70%
+
+
+	.main
+		height: 400px
+		&-slider
+			margin-top: 140px
+		&__title
+			margin-bottom: 20px
+			margin-left: 0
+			font-size: 26px
+			text-align: center
+			line-height: 30px
+		&__text
+			margin-left: 0
+			text-align: center
+			font-size: 13px
+			line-height: 18px
+		&_fixed
+			width: 100%
+			margin-top: -20px
+			text-align: center
+			margin-left: 0
+		&-form
+			&__small
+				margin-top: 10px
+				font-size: 13px
+				line-height: 18px
+			&__input
+				width: 270px
+				margin-bottom: 18px
+				padding-bottom: 5px
+				&::-webkit-input-placeholder
+					font-size: 13px
+				&::-moz-placeholder
+					font-size: 13px
+				&:-moz-placeholder
+					font-size: 13px
+				&:-ms-input-placeholder
+					font-size: 13px
+				&_direct
+					padding-left: 25px
+
+	.slider
+		&-arrow
+			top: 50%
+			height: 12px
+			&__left
+				margin-left: 10px
+			&__right
+				margin-right: 10px
+		&-dots
+			margin-top: 15px
+
+	.services
+		margin-top: 260px
+		height: 989px
+		&-container
+			padding-top: 0
+			top: 400px
+			max-width: 100%
+		&-block
+			width: 100%
+			height: 140px
+			margin-bottom: 6px
+			&s
+				margin-top: 0
+				max-width: 300px
+			&__text
+				width: 115px
+				margin: 0 auto
+				font-size: 14px
+				line-height: 20px
+			&__btn
+				margin-left: 0px
+			&__img
+				top: 41.5px
+				left: 40px
+
+
+	.about
+		&__img
+			height: 210px
+		&__text
+			margin-bottom: 20px
+			&__block
+				margin:
+					left: auto
+					right: auto
+				max-width: 80%
+		&__descr, &__subtitle
+			font-size: 12px
+			line-height: 18px
+		&__descr
+			text-align: justify
+
+	.news
+		padding:
+			top: 0
+			bottom: 10px
+		&-block
+			width: 100%
+			max-width: 290px
+			padding-bottom: 10px
+			margin-bottom: 15px
+			&s
+				margin-top: 0
+				justify-content: center
+
+	.exp-imp
+		height: 400px
+		padding-top: 95px
+		background:
+			size: auto 100%
+			position: 30% 40%
+		&__title
+			margin-bottom: 20px
+			margin-right: 0
+			font-size: 22px
+			text-align: center
+			line-height: 26px
+		&__text
+			margin-right: 0
+			text-align: center
+			font-size: 12px
+			line-height: 18px
+		&_fixed
+			width: 100%
+			text-align: center
+			margin: 0 auto
+
+	.partners
+		padding-bottom: 30px
+		&__wrap
+			padding-top: 0
+			justify-content: space-around
+		&__block
+			width: 48%
+			height: 100px
+			margin-right: 0
+			&_first
+				margin-left: 0
+		&__img
+			max-width: 80%
+				
+
+
+	.footer
+		&-menu
+			padding:
+				top: 15px
+				bottom: 15px
+				left: 0
+				
+			&__irslogo
+				max-width: 140px
+				margin: -10px auto 0 auto
+		&-logo
+			margin: 0 auto
+			text-align: center
+		&-form
+			width: 305px
+
+	.popup
+		padding-top: 0px
+		width: 290px
+		&-container
+			width: 290px
+		.main-form
+			margin-top: 0px
+			&__input, span
+				margin:
+					left: auto
+					right: auto
+			&__input
+				margin-bottom: 12px
+		.button-submit
+			margin-top: 10px
+		&-call
+			.button-submit
+				margin-top: 20px
+		&-thx
+			width: 260px
+			height: 180px
+			padding-top: 20px
+			&__body_feedback
+				display: block
+				@include roboto
+				font-size: 14px
+				line-height: 15px
+				img
+					margin-top: 14px
+					max-width: 33%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+

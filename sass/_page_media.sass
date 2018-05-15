@@ -1,0 +1,456 @@
+@media (max-width: 1320px)
+	.page
+		&-title, &-main__text, &-main__imgs 
+			margin-left: 0px
+		&-nav
+			max-width: 340px
+
+	.feedback
+		&s, &-form
+			margin-left: 0px
+
+	.table-data
+		min-width: 50px
+		margin-left: 0px
+
+	.page_list
+		&__ul
+			margin-left: 19px
+
+	.calculator
+		&__img
+			margin-top: 34px
+		&__title, &__text
+			margin-left: 25px
+
+	.section-title_calculator
+		&::before
+			left: 663px
+		&::after
+			left: 285px
+
+
+		
+
+//========================================================
+
+
+
+@media (max-width: 1199px)
+	.page
+		&-nav
+			max-width: 290px
+
+	.feedback-form
+		&__input
+			width: 290px
+
+	.table-data
+		font-size: 13px
+		line-height: 18px	
+		&__th, &__td
+			padding: 0 10px
+
+	.news-page-blocks
+		justify-content: space-between
+		.news
+			&-block
+				width: 24%
+				&__text
+					margin-top: 20px
+					width: 90%
+					font-size: 14px
+					line-height: 20px
+				&__date
+					margin:
+						top: 15px
+						left: 15px
+					font-size: 13px
+					line-height: 20px
+		
+	.new-direct
+		&-slider
+			max-width: 100%
+			width: 100%
+
+	.calculator
+		&__img
+			margin-top: 50px
+
+	.section-title_calculator
+		&::before
+			left: 587px
+		&::after
+			left: 235px
+
+
+
+
+
+//========================================================
+
+
+
+@media (max-width: 991px)
+
+	.page-body
+		background-position: 0 -100px
+	.nav-title
+		font-size: 17px
+		line-height: 22px
+
+	.page
+		&-title
+			font-size: 20px
+			line-height: 22px
+			&-center
+				text-align: center
+		&-main
+			padding-top: 42px
+			&__text
+				font-size: 14px
+				line-height: 20px
+		&-nav
+			max-width: 220px
+			&__text
+				font-size: 14px
+				line-height: 20px
+	
+	
+	.feedback
+		&-page
+			margin-top: -40px
+		&__title, &__text
+			font-size: 14px
+			line-height: 20px
+
+	.table-data
+		font-size: 14px
+		line-height: 20px
+
+	.page_list
+		text-align: center
+		&__container
+			width: 195px
+			margin: 0 auto
+			text-align: left
+		&__link:hover
+			color: $text-color-blue
+			text-decoration: underline
+
+	.new-direct
+		&__title
+			display: none	
+		&__title_hidden
+			display: inline-block
+			width: 100%
+			margin-top: 10px
+			margin-bottom: 25px
+		&__ultitle
+			text-align: center
+		&-slider
+			&s
+				text-align: center
+				width: 100%
+			&__top, &__bottom
+				max-width: 500px
+				margin-left: auto
+				margin-right: auto
+			&__bottom
+				max-height: 100px
+				margin-bottom: 40px
+
+	
+
+	.contacts
+		&__map
+			width: 100%
+		&-block
+			&__social
+				max-width: 180px
+				margin: 23px auto
+			&__link
+				width: 40px
+				height: 40px
+			&__img
+				margin-top: 8px
+
+	.section-title_calculator
+		&::before
+			left: 460px
+		&::after
+			left: 125px
+
+	.calculator
+		&__title, &__text
+			margin-left: 0
+		&__title
+			font-size: 22px
+			line-height: 26px
+		&__text
+			font-size: 14px
+			line-height: 18px
+		&__img
+			margin-top: 45px
+		&__logo
+			width: 100%
+
+
+
+
+
+
+	
+
+
+
+	
+
+
+
+
+
+//========================================================
+
+@media (max-width: 767px)
+
+	.nav-title
+		text-align: center
+	.page
+		&-title
+			text-align: center
+		&-main
+			&__text
+				margin-bottom: 50px
+			&__imgs
+				margin-bottom: 10px
+		&-nav
+			max-width: 100%
+			width: 100%
+			margin-bottom: 50px
+			&_ul
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+			&_li
+				width: 49%
+			&_link
+				margin-bottom: 10px
+			&__text
+				margin-left: 54px
+			&__img
+				left: 12px
+
+
+	.feedback
+		&s
+			margin-bottom: 50px
+		&-page
+			margin-top: 0
+		&-form
+			&__input
+				width: 246px
+				margin-right: 6px
+				padding-bottom: 1px
+			&__area
+				margin-bottom: 15px
+			&__btn
+				display: block
+
+	.page_table
+		padding-top: 48px
+
+	.table-data
+		text-align: left
+		&__tr
+			border: 1px solid $bg-color-grey
+			margin-bottom: 10px
+		&__th
+			display: none
+		&__td
+			display: flex
+			align-items: center
+			height: 40px
+			padding: 0
+			font-size: 15px
+			span
+				width: 10px
+			&:last-child
+				margin-bottom: 15px
+			&:before
+				content: attr(data-th)": "
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				min-width: 50%
+				height: 100%
+				padding-right: 15px
+				color: $text-color-light
+				background-color: $text-color-blue
+
+
+	.new-direct-slider__bottom
+		display: none
+
+
+	.news-page-blocks
+		margin-top: 30px
+		.news
+			&-block
+				width: 48%
+				&__text
+					margin-top: 20px
+					width: 90%
+					font-size: 14px
+					line-height: 20px
+				&__date
+					margin:
+						top: 15px
+						left: 15px
+					font-size: 13px
+					line-height: 20px
+
+	.new-direct-slider__top
+		margin-bottom: 40px
+
+	.contacts
+		padding-top: 25px
+		padding-bottom: 40px
+		&-block
+			max-width: 100%
+			padding-top: 30px
+			padding-bottom: 18px
+			&__title
+				font-size: 20px
+				line-height: 22px
+			&__text
+				font-size: 14px
+				line-height: 22px
+			&__social
+				max-width: 160px
+
+	.section-title_calculator
+		&::before
+			left: 356px
+		&::after
+			left: 48px
+
+	.calculator
+		padding-top: 0
+		padding-bottom: 40px
+		&__title
+			margin-top: 0
+			text-align: center
+		&__text
+			max-width: 100%
+			text-align: center
+		&__img
+			margin-top: 10px
+			text-align: center
+		&__logo
+			width: 30%
+
+
+
+
+		
+			
+
+//========================================================
+
+@media (max-width: 575px)
+
+	.page-main
+		padding-top: 20px
+		&__img
+			width: 100%
+			max-width: 350px
+			margin-bottom: 10px
+			&s
+				justify-content: center
+				margin-left: 0
+
+	.page
+		&-nav
+			&_li
+				width: 100%
+			&__img
+				top: 8px
+				left: 17px
+				width: 29px
+				height: 30px
+			&__text
+				margin-left: 65px
+				font-size: 16px
+				line-height: 18px
+				max-width: 65%
+			&_link
+				margin-bottom: 6px
+
+	.feedback
+		&-form
+			&__input
+				height: 40px
+				width: 100%
+
+	.table-data
+		&__td
+			height: 50px
+			font-size: 13px
+			line-height: 14px	
+			&:before
+				justify-content: flex-end
+				text-align: right
+				padding-right: 12px	
+			
+	.new-direct
+		&-wrap
+			margin-left: 0
+			margin-right: 0
+			padding: 10px
+		&-ul
+			padding-top: 0
+			margin-left: 20px
+			font-size: 13px
+			line-height: 18px
+			li
+				padding-bottom: 5px
+	
+
+
+
+	.news-page-blocks
+		justify-content: center
+		.news
+			&-block
+				width: 100%
+			&__text
+				margin-top: 20px
+				width: 90%
+				font-size: 14px
+				line-height: 20px
+			&__date
+				margin:
+					top: 15px
+					left: 15px
+				font-size: 13px
+				line-height: 20px
+
+	.button-news
+		width: 180px
+
+	.contacts
+		padding-top: 0
+		&-block
+			margin-top: 0
+
+
+
+
+
+
+
+
+	
+	

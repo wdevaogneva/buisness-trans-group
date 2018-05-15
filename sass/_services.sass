@@ -1,0 +1,80 @@
+.services
+	z-index: -1
+	margin-top: 678px
+	padding-top: 10px
+	text-align: right
+	//background-color: rgba(red, 0.5)
+	background-color: $bg-color-grey
+	min-height: 450px
+	&-container
+		position: absolute
+		top: 792px
+		left: 50%
+		transform: translateX(-50%)
+		z-index: 0
+		width: 1200px
+		padding:
+			top: 60px
+			bottom: 30px
+		background-color: $bg-color-grey
+	&-block
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		width: 33.1%
+		height: 178px
+		margin-bottom: 4px
+		background-color: $text-color-light
+		transition: All 0.2s
+		&s
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			max-width: 1132px
+			margin: 55px auto 0 auto
+			//background-color: rgba(green, 0.5)
+			min-height: 200px
+		&__descr
+			margin-top: 3px
+			margin-right: 3px
+			width: 155px
+		&__text
+			width: 130px
+			@include roboto
+			font-size: 16px
+			line-height: 24px
+			letter-spacing: 0.32px
+			color: #000000
+			transition: All 0.2s
+		&__btn
+			margin-left: -20px
+			display: none
+			transition: All 0.2s
+		&__img
+			position: absolute
+			top: 63px
+			left: 57px
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 64px
+			height: 57px
+			transition: All 0.2s
+			//background-color: rgba(blue, 0.5)
+			&-o
+				display: none
+				transition: All 0.2s
+		&:hover
+			background-color: $active-color
+			.services-block
+				&__text
+					color: $text-color-light
+				&__img-o
+					display: flex
+				&__btn
+					display: block
+		
+
+
+		

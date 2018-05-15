@@ -1,0 +1,61 @@
+.header
+	position: relative
+	z-index: 1
+	padding:
+		top: 47px
+		bottom: 17px
+	color: $text-color-light
+	background-color: $active-color
+	&-main
+		padding-top: 22px
+		background-color: transparent
+	&-text
+		@include roboto
+		font-size: 14px
+		line-height: 24px
+		letter-spacing: 0.28px
+	&-phone
+		margin-right: 5px
+		@include roboto-b
+		font-size: 16px
+		line-height: 24px
+		text-align: right
+		letter-spacing: 0.32px
+		a
+			color: $text-color-light
+	&-logo
+		position: relative
+		text-align: center
+		margin:
+			top: 17px
+			left: 110px
+			bottom: 40px
+		&::before
+			content: ''
+			position: absolute
+			top: 48px
+			left: 296px
+			width: 106px
+			height: 2px			
+			background: transparent url(../img/line-white.png) center no-repeat
+		&::after
+			content: ''
+			position: absolute
+			top: 48px
+			left: -36px
+			width: 106px
+			height: 2px			
+			background: transparent url(../img/line-white.png) center no-repeat
+	
+
+
+
+
+
+
+
+
+		
+			
+
+
